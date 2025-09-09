@@ -1,0 +1,11 @@
+# Program to find the largest element in an array
+n = int(input("Enter the number of elements: "))
+arr = []
+print("Enter the elements:")
+for i in range(n):
+    arr.append(int(input()))
+largest = arr[0]
+for num in arr:
+    if num > largest:
+        largest = num
+print("The largest element in the array is:", largest)
